@@ -11,38 +11,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-white/20">
+    <nav className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-200">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center group">
           <div className="relative">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold text-blue-600 hover:text-purple-600 transition-colors duration-300">
               RISHABH ELECTRONICS
             </span>
-            <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
           </div>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
-          <Link href="/" className="relative font-medium text-gray-700 hover:text-purple-600 transition-all duration-300 group">
-            <span>Home</span>
-            <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
+          <Link href="/" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300">
+            Home
           </Link>
-          <Link href="/products" className="relative font-medium text-gray-700 hover:text-purple-600 transition-all duration-300 group">
-            <span>Products</span>
-            <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
+          <Link href="/products" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300">
+            Products
           </Link>
-          <Link href="/brands" className="relative font-medium text-gray-700 hover:text-purple-600 transition-all duration-300 group">
-            <span>Brands</span>
-            <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
+          <Link href="/brands" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300">
+            Brands
           </Link>
-          <Link href="/gallery" className="relative font-medium text-gray-700 hover:text-purple-600 transition-all duration-300 group">
-            <span>Gallery</span>
-            <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
+          <Link href="/gallery" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300">
+            Gallery
           </Link>
-          <Link href="/contact" className="relative font-medium text-gray-700 hover:text-purple-600 transition-all duration-300 group">
-            <span>Contact Us</span>
-            <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
+          <Link href="/contact" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300">
+            Contact Us
           </Link>
         </div>
 
