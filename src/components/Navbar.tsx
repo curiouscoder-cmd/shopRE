@@ -25,19 +25,19 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
           <Link href="/" className="relative font-semibold text-gray-700 hover:text-purple-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50">
-            <span className="relative z-10">🏠 Home</span>
+            <span className="relative z-10"> Home</span>
             <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
           </Link>
           <Link href="/products" className="relative font-semibold text-gray-700 hover:text-purple-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50">
-            <span className="relative z-10">🛍️ Products</span>
+            <span className="relative z-10"> Products</span>
             <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
           </Link>
           <Link href="/brands" className="relative font-semibold text-gray-700 hover:text-purple-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50">
-            <span className="relative z-10">🏷️ Brands</span>
+            <span className="relative z-10"> Brands</span>
             <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
           </Link>
           <Link href="/gallery" className="relative font-semibold text-gray-700 hover:text-purple-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50">
-            <span className="relative z-10">📸 Gallery</span>
+            <span className="relative z-10"> Gallery</span>
             <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></div>
           </Link>
           <Link href="/contact" className="relative font-semibold text-gray-700 hover:text-purple-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50">

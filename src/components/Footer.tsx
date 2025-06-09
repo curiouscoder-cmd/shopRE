@@ -49,25 +49,25 @@ const Footer = () => {
                 <li>
                   <Link href="/" className="flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 group">
                     <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full group-hover:scale-150 transition-transform duration-300"></span>
-                    <span className="group-hover:translate-x-2 transition-transform duration-300">🏠 Home</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-300"> Home</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/products" className="flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 group">
                     <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full group-hover:scale-150 transition-transform duration-300"></span>
-                    <span className="group-hover:translate-x-2 transition-transform duration-300">🛍️ Products</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-300"> Products</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/brands" className="flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 group">
                     <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full group-hover:scale-150 transition-transform duration-300"></span>
-                    <span className="group-hover:translate-x-2 transition-transform duration-300">🏷️ Brands</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-300"> Brands</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/gallery" className="flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 group">
                     <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full group-hover:scale-150 transition-transform duration-300"></span>
-                    <span className="group-hover:translate-x-2 transition-transform duration-300">📸 Gallery</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-300"> Gallery</span>
                   </Link>
                 </li>
                 <li>
