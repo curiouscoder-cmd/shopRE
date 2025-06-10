@@ -30,11 +30,11 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container relative z-20 text-white">
+      <div className="container relative z-20 text-white py-8 md:py-12">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <span className="inline-block px-6 py-3 bg-white bg-opacity-20 rounded-full text-sm font-medium border border-white border-opacity-30 mb-6 shadow-lg">
-              🏆 Trusted Since 2005
+              🏆 Trusted Since 2014
             </span>
           </div>
 
@@ -43,7 +43,7 @@ const HeroSection = () => {
             <span className="block bg-gradient-to-r from-blue-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent">
               Furniture Store
             </span>
-            <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-2 text-white">in Town</span>
+            <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-2 text-white">in Baloda Bazar</span>
           </h1>
 
           <p className="text-lg md:text-xl lg:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
@@ -61,13 +61,13 @@ const HeroSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
+          <div className="mt-16 mb-20 md:mb-24 lg:mb-28 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="bg-white bg-opacity-10 rounded-2xl p-6 text-center border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 shadow-lg">
-              <div className="text-3xl font-bold text-blue-300 mb-2">18+</div>
+              <div className="text-3xl font-bold text-blue-300 mb-2">11+</div>
               <div className="text-gray-300">Years Experience</div>
             </div>
             <div className="bg-white bg-opacity-10 rounded-2xl p-6 text-center border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 shadow-lg">
-              <div className="text-3xl font-bold text-purple-300 mb-2">1000+</div>
+              <div className="text-3xl font-bold text-purple-300 mb-2">5000+</div>
               <div className="text-gray-300">Happy Customers</div>
             </div>
             <div className="bg-white bg-opacity-10 rounded-2xl p-6 text-center border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 shadow-lg">
@@ -79,7 +79,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-30">
         <div className="flex flex-col items-center text-white/60">
           <span className="text-sm mb-2">Scroll to explore</span>
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">

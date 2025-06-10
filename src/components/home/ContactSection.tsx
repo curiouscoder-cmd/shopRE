@@ -16,7 +16,7 @@ const ContactSection = () => {
                 <FaMapMarkerAlt className="text-blue-600 text-2xl mt-1 mr-4" />
                 <div>
                   <h4 className="font-bold mb-1">Our Location</h4>
-                  <p>123 Main Street, Your City, State 12345</p>
+                  <p>Shop No.1,Kediya Vyapar Bihar, Ambedkar Chowk, Baloda Bazar, Raipur, 493332</p>
                 </div>
               </div>
               
@@ -25,8 +25,8 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-bold mb-1">Call Us</h4>
                   <p>
-                    <a href="tel:+919876543210" className="hover:text-blue-600 transition-colors">
-                      +91 98765 43210
+                    <a href="tel:+919926480250" className="hover:text-blue-600 transition-colors">
+                      +91 99264 80250
                     </a>
                   </p>
                 </div>
@@ -37,7 +37,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-bold mb-1">WhatsApp</h4>
                   <p>
-                    <a href="https://wa.me/919876543210" className="hover:text-blue-600 transition-colors">
+                    <a href="https://wa.me/9926480250" className="hover:text-blue-600 transition-colors">
                       Message us on WhatsApp
                     </a>
                   </p>
@@ -48,8 +48,8 @@ const ContactSection = () => {
                 <FaClock className="text-blue-600 text-2xl mt-1 mr-4" />
                 <div>
                   <h4 className="font-bold mb-1">Business Hours</h4>
-                  <p>Monday - Saturday: 10:00 AM - 8:00 PM</p>
-                  <p>Sunday: Closed</p>
+                  <p>Saturday-Thursday: 10:00 AM - 9:00 PM</p>
+                  <p>Friday: Closed</p>
                 </div>
               </div>
             </div>

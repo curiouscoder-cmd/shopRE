@@ -1,5 +1,6 @@
 import { categories } from '@/data/categories';
 import Link from 'next/link';
+import CategoryImage from '@/components/ui/CategoryImage';
 
 export const metadata = {
   title: 'Products - RISHABH ELECTRONICS',
@@ -59,13 +60,14 @@ export default function ProductsPage() {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                   {/* Image Section */}
-                  <div className="relative h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300">
-                    <div className="text-center">
-                      <div className="text-4xl mb-2">📱</div>
-                      <span className="text-blue-600 font-semibold group-hover:text-purple-600 transition-colors">
-                        {category.name}
-                      </span>
-                    </div>
+                  <div className="relative h-48 bg-gradient-to-br from-blue-100 to-purple-100 overflow-hidden group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300">
+                    <CategoryImage
+                      src={category.image}
+                      alt={category.name}
+                      categoryName={category.name}
+                      categoryType={category.type}
+                      fallbackClassName="flex items-center justify-center h-full"
+                    />
 
                     {/* Floating Icon */}
                     <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xs opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
@@ -123,13 +125,14 @@ export default function ProductsPage() {
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-50/50 to-orange-50/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                   {/* Image Section */}
-                  <div className="relative h-48 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center group-hover:from-amber-200 group-hover:to-orange-200 transition-all duration-300">
-                    <div className="text-center">
-                      <div className="text-4xl mb-2">🛋️</div>
-                      <span className="text-amber-600 font-semibold group-hover:text-orange-600 transition-colors">
-                        {category.name}
-                      </span>
-                    </div>
+                  <div className="relative h-48 bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden group-hover:from-amber-200 group-hover:to-orange-200 transition-all duration-300">
+                    <CategoryImage
+                      src={category.image}
+                      alt={category.name}
+                      categoryName={category.name}
+                      categoryType={category.type}
+                      fallbackClassName="flex items-center justify-center h-full"
+                    />
 
                     {/* Floating Icon */}
                     <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-white text-xs opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">

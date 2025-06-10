@@ -12,28 +12,28 @@ export const categories: Category[] = [
     id: 'tvs',
     name: 'Televisions',
     type: 'electronics',
-    image: '/images/categories/tvs.jpg',
+    image: '/images/categories/Tv.png',
     description: 'Smart TVs, LED TVs, and OLED TVs from top brands'
   },
   {
     id: 'fridges',
     name: 'Refrigerators',
     type: 'electronics',
-    image: '/images/categories/fridges.jpg',
+    image: '/images/categories/ref.webp',
     description: 'Single-door, double-door, and side-by-side refrigerators'
   },
   {
     id: 'acs',
     name: 'Air Conditioners',
     type: 'electronics',
-    image: '/images/categories/acs.jpg',
+    image: '/images/categories/ac.jpg',
     description: 'Split ACs, Window ACs, and Inverter ACs'
   },
   {
     id: 'mobiles',
     name: 'Mobile Phones',
     type: 'electronics',
-    image: '/images/categories/mobiles.jpg',
+    image: '/images/categories/mobile.jpeg',
     description: 'Latest smartphones from all major brands'
   },
   {
@@ -47,14 +47,14 @@ export const categories: Category[] = [
     id: 'lights',
     name: 'Lighting',
     type: 'electronics',
-    image: '/images/categories/lights.jpg',
+    image: '/images/categories/light.webp',
     description: 'LED lights, decorative lights, and smart lighting solutions'
   },
   {
     id: 'inductions',
     name: 'Induction Cooktops',
     type: 'electronics',
-    image: '/images/categories/inductions.jpg',
+    image: '/images/categories/induction.webp',
     description: 'Energy-efficient induction cooktops for modern kitchens'
   },
   
@@ -63,7 +63,7 @@ export const categories: Category[] = [
     id: 'almirahs',
     name: 'Almirahs & Wardrobes',
     type: 'furniture',
-    image: '/images/categories/almirahs.jpg',
+    image: '/images/categories/almirah.jpg',
     description: 'Spacious storage solutions for your bedroom and living room'
   },
   {
@@ -91,14 +91,14 @@ export const categories: Category[] = [
     id: 'dining-sets',
     name: 'Dining Sets',
     type: 'furniture',
-    image: '/images/categories/dining-sets.jpg',
+    image: '/images/categories/dining.webp',
     description: 'Complete dining sets for family meals and gatherings'
   },
   {
     id: 'sofa-sets',
     name: 'Sofa Sets',
     type: 'furniture',
-    image: '/images/categories/sofa-sets.jpg',
+    image: '/images/categories/sofa.webp',
     description: 'Elegant sofa sets to enhance your living room'
   }
 ];

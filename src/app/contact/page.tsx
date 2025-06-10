@@ -45,8 +45,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-2 text-gray-800 group-hover:text-purple-700 transition-colors">Our Location</h3>
-                      <p className="text-gray-600 leading-relaxed">123 Main Street, Your City, State 12345</p>
-                      <p className="mt-2 text-sm text-gray-500">Landmark: Near City Mall</p>
+                      <p className="text-gray-600 leading-relaxed">Shop No.1,Kediya Vyapar Bihar, Ambedkar Chowk, Baloda Bazar, Raipur</p>
+                      <p className="mt-2 text-sm text-gray-500">Landmark: Near Bajpai Nursing Home</p>
                     </div>
                   </div>
                 </div>
@@ -59,13 +59,13 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold mb-2 text-gray-800 group-hover:text-teal-700 transition-colors">Call Us</h3>
                       <p className="mb-1">
-                        <a href="tel:+919876543210" className="text-gray-600 hover:text-teal-600 transition-colors font-medium">
-                          +91 98765 43210
+                        <a href="tel:+919926480250" className="text-gray-600 hover:text-teal-600 transition-colors font-medium">
+                          +91 9926480250
                         </a>
                       </p>
                       <p>
-                        <a href="tel:+919876543211" className="text-gray-600 hover:text-teal-600 transition-colors font-medium">
-                          +91 98765 43211
+                        <a href="tel:+918226001080" className="text-gray-600 hover:text-teal-600 transition-colors font-medium">
+                          +91 8226001080
                         </a>
                       </p>
                     </div>
@@ -80,7 +80,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold mb-2 text-gray-800 group-hover:text-green-700 transition-colors">WhatsApp</h3>
                       <p>
-                        <a href="https://wa.me/919876543210" className="text-gray-600 hover:text-green-600 transition-colors font-medium">
+                        <a href="https://wa.me/9926480250" className="text-gray-600 hover:text-green-600 transition-colors font-medium">
                           Message us on WhatsApp
                         </a>
                       </p>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                       <h3 className="font-bold mb-2 text-gray-800 group-hover:text-red-700 transition-colors">Email</h3>
                       <p>
                         <a href="mailto:info@rishabhelectronics.com" className="text-gray-600 hover:text-red-600 transition-colors font-medium">
-                          info@rishabhelectronics.com
+                          rishabhelec76@gmail.com
                         </a>
                       </p>
                     </div>
@@ -111,8 +111,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-2 text-gray-800 group-hover:text-purple-700 transition-colors">Business Hours</h3>
-                      <p className="text-gray-600 leading-relaxed">Monday - Saturday: 10:00 AM - 8:00 PM</p>
-                      <p className="text-gray-600">Sunday: Closed</p>
+                      <p className="text-gray-600 leading-relaxed">Saturday - Thursday: 10:00 AM - 9:00 PM</p>
+                      <p className="text-gray-600">Saturday: 10:00 AM - 8:00 PM</p>
+                      <p className="text-gray-600">Friday: Closed</p>
                     </div>
                   </div>
                 </div>

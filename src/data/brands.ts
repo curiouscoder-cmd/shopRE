@@ -9,19 +9,19 @@ export const brands: Brand[] = [
   {
     id: 'samsung',
     name: 'Samsung',
-    logo: '/images/brands/samsung.png',
+    logo: '/images/brands/samsung.jpg',
     category: 'electronics'
   },
   {
     id: 'lg',
     name: 'LG',
-    logo: '/images/brands/lg.png',
+    logo: '/images/brands/LG.png',
     category: 'electronics'
   },
   {
     id: 'sony',
     name: 'Sony',
-    logo: '/images/brands/sony.png',
+    logo: '/images/brands/sony.jpg',
     category: 'electronics'
   },
   {
@@ -33,7 +33,7 @@ export const brands: Brand[] = [
   {
     id: 'godrej',
     name: 'Godrej',
-    logo: '/images/brands/godrej.png',
+    logo: '/images/brands/goodrej.png',
     category: 'both'
   },
   {
@@ -45,7 +45,7 @@ export const brands: Brand[] = [
   {
     id: 'prestige',
     name: 'Prestige',
-    logo: '/images/brands/prestige.png',
+    logo: '/images/brands/prestige.jpg',
     category: 'electronics'
   },
   {
@@ -53,17 +53,5 @@ export const brands: Brand[] = [
     name: 'Bajaj',
     logo: '/images/brands/bajaj.png',
     category: 'electronics'
-  },
-  {
-    id: 'nilkamal',
-    name: 'Nilkamal',
-    logo: '/images/brands/nilkamal.png',
-    category: 'furniture'
-  },
-  {
-    id: 'durian',
-    name: 'Durian',
-    logo: '/images/brands/durian.png',
-    category: 'furniture'
   }
 ];

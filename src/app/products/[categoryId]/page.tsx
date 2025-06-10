@@ -1,6 +1,7 @@
 import { categories } from '@/data/categories';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import CategoryHeroImage from '@/components/ui/CategoryHeroImage';
 
 interface PageProps {
   params: {
@@ -41,33 +42,21 @@ export default function CategoryPage({ params }: PageProps) {
     {
       id: 1,
       name: `Premium ${category.name} Model 1`,
-      price: '₹25,999',
-      originalPrice: '₹29,999',
-      discount: '13% OFF',
       features: ['Latest Technology', 'Energy Efficient', 'Warranty Included']
     },
     {
       id: 2,
       name: `Deluxe ${category.name} Model 2`,
-      price: '₹35,999',
-      originalPrice: '₹39,999',
-      discount: '10% OFF',
       features: ['Premium Quality', 'Advanced Features', '2 Year Warranty']
     },
     {
       id: 3,
       name: `Standard ${category.name} Model 3`,
-      price: '₹18,999',
-      originalPrice: '₹21,999',
-      discount: '14% OFF',
       features: ['Good Quality', 'Reliable', '1 Year Warranty']
     },
     {
       id: 4,
       name: `Economy ${category.name} Model 4`,
-      price: '₹12,999',
-      originalPrice: '₹14,999',
-      discount: '13% OFF',
       features: ['Budget Friendly', 'Basic Features', '6 Month Warranty']
     }
   ];
@@ -84,9 +73,20 @@ export default function CategoryPage({ params }: PageProps) {
         </div>
       </nav>
 
+      {/* Category Hero Section */}
+      <div className="mb-12">
+        <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl">
+          <CategoryHeroImage
+            src={category.image}
+            alt={category.name}
+            categoryName={category.name}
+            categoryType={category.type}
+            description={category.description}
+          />
+        </div>
+      </div>
+
       <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">{category.name}</h1>
-        <p className="text-lg text-gray-600 mb-6">{category.description}</p>
         
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
           <h2 className="font-bold text-blue-800 mb-2">Why Choose Our {category.name}?</h2>
@@ -107,22 +107,14 @@ export default function CategoryPage({ params }: PageProps) {
             </div>
             
             <div className="p-4">
-              <h3 className="font-bold text-lg mb-2">{product.name}</h3>
-              
-              <div className="mb-3">
-                <div className="flex items-center space-x-2">
-                  <span className="text-2xl font-bold text-green-600">{product.price}</span>
-                  <span className="text-sm text-gray-500 line-through">{product.originalPrice}</span>
-                  <span className="text-sm bg-red-100 text-red-600 px-2 py-1 rounded">{product.discount}</span>
-                </div>
-              </div>
-              
-              <ul className="text-sm text-gray-600 mb-4 space-y-1">
+              <h3 className="font-bold text-lg mb-4">{product.name}</h3>
+
+              <ul className="text-sm text-gray-600 mb-6 space-y-1">
                 {product.features.map((feature, index) => (
                   <li key={index}>• {feature}</li>
                 ))}
               </ul>
-              
+
               <div className="flex flex-col space-y-2">
                 <button className="btn-primary text-sm">
                   Call for Best Price

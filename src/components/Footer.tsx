@@ -23,7 +23,7 @@ const Footer = () => {
                 </h3>
               </div>
               <p className="mb-6 text-gray-300 leading-relaxed">
-                Your one-stop shop for all electronics and furniture needs. Serving with trust and quality since 2005.
+                Your one-stop shop for all electronics and furniture needs. Serving with trust and quality since 2014.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 text-center text-sm">
@@ -95,7 +95,7 @@ const Footer = () => {
                     <FaMapMarkerAlt className="text-white text-sm" />
                   </div>
                   <div>
-                    <p className="text-gray-300 leading-relaxed">123 Main Street, Your City, State 12345</p>
+                    <p className="text-gray-300 leading-relaxed">Shop No.1,Kediya Vyapar Bihar, Ambedkar Chowk, Baloda Bazar, Raipur</p>
                   </div>
                 </div>
 
@@ -104,8 +104,8 @@ const Footer = () => {
                     <FaPhone className="text-white text-sm" />
                   </div>
                   <div>
-                    <a href="tel:+919876543210" className="text-gray-300 hover:text-white transition-colors font-medium">
-                      +91 98765 43210
+                    <a href="tel:+919926480250" className="text-gray-300 hover:text-white transition-colors font-medium">
+                      +91 99264 80250
                     </a>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const Footer = () => {
                     <FaWhatsapp className="text-white text-sm" />
                   </div>
                   <div>
-                    <a href="https://wa.me/919876543210" className="text-gray-300 hover:text-white transition-colors font-medium">
+                    <a href="https://wa.me/919926480250" className="text-gray-300 hover:text-white transition-colors font-medium">
                       WhatsApp Us
                     </a>
                   </div>
@@ -126,8 +126,8 @@ const Footer = () => {
                     <FaClock className="text-white text-sm" />
                   </div>
                   <div>
-                    <p className="text-gray-300">Mon-Sat: 10:00 AM - 8:00 PM</p>
-                    <p className="text-gray-400 text-sm">Sunday: Closed</p>
+                    <p className="text-gray-300">Sat-Thu: 10:00 AM - 9:00 PM</p>
+                    <p className="text-gray-400 text-sm">Friday: Closed</p>
                   </div>
                 </div>
               </div>
@@ -142,7 +142,7 @@ const Footer = () => {
               <div className="flex items-center justify-center space-x-3 mb-4">
                 <span className="text-2xl">⭐</span>
                 <p className="text-lg font-semibold bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
-                  Trusted Since 2005
+                  Trusted Since 2014
                 </p>
                 <span className="text-2xl">⭐</span>
               </div>

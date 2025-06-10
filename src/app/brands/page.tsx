@@ -1,4 +1,5 @@
 import { brands } from '@/data/brands';
+import BrandImage from '@/components/ui/BrandImage';
 
 export const metadata = {
   title: 'Brands - RISHABH ELECTRONICS',
@@ -58,12 +59,13 @@ export default function BrandsPage() {
 
                   {/* Content */}
                   <div className="relative z-10 flex flex-col items-center">
-                    {/* Brand Logo Placeholder */}
-                    <div className="w-24 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center mb-4 group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300 transform group-hover:scale-110">
-                      <span className="text-blue-600 text-xs font-semibold group-hover:text-purple-600 transition-colors text-center">
-                        {brand.name}
-                      </span>
-                    </div>
+                    {/* Brand Logo */}
+                    <BrandImage
+                      src={brand.logo}
+                      alt={`${brand.name} logo`}
+                      brandName={brand.name}
+                      fallbackClassName="w-24 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center mb-4 group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300 transform group-hover:scale-110"
+                    />
 
                     {/* Brand Name */}
                     <h3 className="text-sm font-semibold text-gray-800 text-center group-hover:text-purple-700 transition-colors mb-2">
@@ -118,12 +120,13 @@ export default function BrandsPage() {
 
                   {/* Content */}
                   <div className="relative z-10 flex flex-col items-center">
-                    {/* Brand Logo Placeholder */}
-                    <div className="w-24 h-16 bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl flex items-center justify-center mb-4 group-hover:from-amber-200 group-hover:to-orange-200 transition-all duration-300 transform group-hover:scale-110">
-                      <span className="text-amber-600 text-xs font-semibold group-hover:text-orange-600 transition-colors text-center">
-                        {brand.name}
-                      </span>
-                    </div>
+                    {/* Brand Logo */}
+                    <BrandImage
+                      src={brand.logo}
+                      alt={`${brand.name} logo`}
+                      brandName={brand.name}
+                      fallbackClassName="w-24 h-16 bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl flex items-center justify-center mb-4 group-hover:from-amber-200 group-hover:to-orange-200 transition-all duration-300 transform group-hover:scale-110"
+                    />
 
                     {/* Brand Name */}
                     <h3 className="text-sm font-semibold text-gray-800 text-center group-hover:text-orange-700 transition-colors mb-2">

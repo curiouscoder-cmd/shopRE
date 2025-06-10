@@ -47,7 +47,7 @@ const AboutSection = () => {
               <h3 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Our Story</h3>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p className="text-lg">
-                  Since <span className="font-semibold text-blue-600">2005</span>, RISHABH ELECTRONICS has been the trusted name for quality electronics and furniture in the region.
+                  Since <span className="font-semibold text-blue-600">2014</span>, RISHABH ELECTRONICS has been the trusted name for quality electronics and furniture in the region.
                   What started as a small shop has now grown into a premier destination for all your home and office needs.
                 </p>
                 <p className="text-lg">
@@ -64,12 +64,12 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="glass rounded-2xl p-6 text-center card-3d group hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 transition-all duration-300">
                 <div className="text-4xl mb-2">🏆</div>
-                <h4 className="font-bold text-3xl gradient-text mb-2">18+</h4>
+                <h4 className="font-bold text-3xl gradient-text mb-2">11+</h4>
                 <p className="text-gray-600 font-medium">Years of Excellence</p>
               </div>
               <div className="glass rounded-2xl p-6 text-center card-3d group hover:bg-gradient-to-br hover:from-purple-50 hover:to-pink-50 transition-all duration-300">
                 <div className="text-4xl mb-2">❤️</div>
-                <h4 className="font-bold text-3xl gradient-text mb-2">1000+</h4>
+                <h4 className="font-bold text-3xl gradient-text mb-2">5000+</h4>
                 <p className="text-gray-600 font-medium">Happy Customers</p>
               </div>
             </div>

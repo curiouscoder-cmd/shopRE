@@ -1,4 +1,5 @@
 import { brands } from '@/data/brands';
+import BrandImage from '@/components/ui/BrandImage';
 
 const BrandsSection = () => {
   return (
@@ -30,12 +31,12 @@ const BrandsSection = () => {
 
                 {/* Content */}
                 <div className="relative z-10 flex flex-col items-center">
-                  {/* Brand Logo Placeholder with Gradient */}
-                  <div className="w-24 h-16 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center mb-4 group-hover:from-blue-100 group-hover:to-purple-100 transition-all duration-300">
-                    <span className="text-gray-600 text-xs font-semibold group-hover:text-purple-600 transition-colors">
-                      {brand.name}
-                    </span>
-                  </div>
+                  {/* Brand Logo */}
+                  <BrandImage
+                    src={brand.logo}
+                    alt={`${brand.name} logo`}
+                    brandName={brand.name}
+                  />
 
                   {/* Brand Name */}
                   <h3 className="text-sm font-semibold text-gray-800 text-center group-hover:text-purple-700 transition-colors">

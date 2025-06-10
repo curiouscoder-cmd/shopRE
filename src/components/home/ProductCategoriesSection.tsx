@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { categories } from '@/data/categories';
+import CategoryImage from '@/components/ui/CategoryImage';
 
 const ProductCategoriesSection = () => {
   const electronicsCategories = categories.filter(cat => cat.type === 'electronics');
@@ -19,7 +20,15 @@ const ProductCategoriesSection = () => {
                 key={category.id}
                 className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="relative h-48 bg-gray-300"></div>
+                <div className="relative h-48 bg-gray-300 overflow-hidden">
+                  <CategoryImage
+                    src={category.image}
+                    alt={category.name}
+                    categoryName={category.name}
+                    categoryType={category.type}
+                    fallbackClassName="flex items-center justify-center h-full bg-gradient-to-br from-blue-100 to-purple-100"
+                  />
+                </div>
                 <div className="p-4">
                   <h4 className="font-bold text-lg mb-1">{category.name}</h4>
                   <p className="text-gray-600 text-sm">{category.description}</p>
@@ -38,7 +47,15 @@ const ProductCategoriesSection = () => {
                 key={category.id}
                 className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="relative h-48 bg-gray-300"></div>
+                <div className="relative h-48 bg-gray-300 overflow-hidden">
+                  <CategoryImage
+                    src={category.image}
+                    alt={category.name}
+                    categoryName={category.name}
+                    categoryType={category.type}
+                    fallbackClassName="flex items-center justify-center h-full bg-gradient-to-br from-amber-100 to-orange-100"
+                  />
+                </div>
                 <div className="p-4">
                   <h4 className="font-bold text-lg mb-1">{category.name}</h4>
                   <p className="text-gray-600 text-sm">{category.description}</p>
