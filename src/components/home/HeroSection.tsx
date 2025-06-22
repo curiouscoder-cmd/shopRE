@@ -67,7 +67,7 @@ const HeroSection = () => {
               <div className="text-gray-300">Years Experience</div>
             </div>
             <div className="bg-white bg-opacity-10 rounded-2xl p-6 text-center border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 shadow-lg">
-              <div className="text-3xl font-bold text-purple-300 mb-2">5000+</div>
+              <div className="text-3xl font-bold text-purple-300 mb-2">50000+</div>
               <div className="text-gray-300">Happy Customers</div>
             </div>
             <div className="bg-white bg-opacity-10 rounded-2xl p-6 text-center border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 shadow-lg">
