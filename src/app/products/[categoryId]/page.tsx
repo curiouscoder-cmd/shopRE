@@ -1,4 +1,5 @@
 import { categories } from '@/data/categories';
+import { productsByCategory } from '@/data/products';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CategoryHeroImage from '@/components/ui/CategoryHeroImage';
@@ -37,29 +38,46 @@ export default function CategoryPage({ params }: PageProps) {
     notFound();
   }
 
-  // Mock products for the category
-  const mockProducts = [
+  // Get real products for the category
+  const categoryProducts = productsByCategory[category.id] || [];
+
+  // Fallback products if no specific products are defined for this category
+  const fallbackProducts = [
     {
-      id: 1,
-      name: `Premium ${category.name} Model 1`,
-      features: ['Latest Technology', 'Energy Efficient', 'Warranty Included']
+      id: `${category.id}-1`,
+      name: `${category.name}`,
+      brand: 'Top Brand',
+      features: ['Latest Technology', 'Energy Efficient', 'Warranty Included'],
+      specifications: ['High Quality Build', 'Reliable Performance', 'Easy Installation'],
+      categoryId: category.id
     },
     {
-      id: 2,
-      name: `Deluxe ${category.name} Model 2`,
-      features: ['Premium Quality', 'Advanced Features', '2 Year Warranty']
+      id: `${category.id}-2`,
+      name: `${category.name}`,
+      brand: 'Premium Brand',
+      features: ['Advanced Features', 'Smart Technology', '2 Year Warranty'],
+      specifications: ['Premium Materials', 'Enhanced Performance', 'Professional Support'],
+      categoryId: category.id
     },
     {
-      id: 3,
-      name: `Standard ${category.name} Model 3`,
-      features: ['Good Quality', 'Reliable', '1 Year Warranty']
+      id: `${category.id}-3`,
+      name: `${category.name} `,
+      brand: 'Quality Brand',
+      features: ['Good Quality', 'Reliable', '1 Year Warranty'],
+      specifications: ['Durable Construction', 'Standard Features', 'Value for Money'],
+      categoryId: category.id
     },
     {
-      id: 4,
-      name: `Economy ${category.name} Model 4`,
-      features: ['Budget Friendly', 'Basic Features', '6 Month Warranty']
+      id: `${category.id}-4`,
+      name: `${category.name}`,
+      brand: 'Budget Brand',
+      features: ['Budget Friendly', 'Basic Features', '6 Month Warranty'],
+      specifications: ['Affordable Option', 'Essential Features', 'Good Value'],
+      categoryId: category.id
     }
   ];
+
+  const products = categoryProducts.length > 0 ? categoryProducts : fallbackProducts;
 
   return (
     <div className="container py-12">
@@ -100,20 +118,37 @@ export default function CategoryPage({ params }: PageProps) {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {mockProducts.map((product) => (
+        {products.map((product) => (
           <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <div className="relative h-48 bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 font-medium">{product.name}</span>
+              <div className="text-center p-4">
+                <div className="text-2xl font-bold text-blue-600 mb-1">{product.brand}</div>
+              </div>
             </div>
-            
-            <div className="p-4">
-              <h3 className="font-bold text-lg mb-4">{product.name}</h3>
 
-              <ul className="text-sm text-gray-600 mb-6 space-y-1">
-                {product.features.map((feature, index) => (
-                  <li key={index}>• {feature}</li>
-                ))}
-              </ul>
+            <div className="p-4">
+              <h3 className="font-bold text-lg mb-2">{product.name}</h3>
+
+
+              <div className="mb-4">
+                <h4 className="font-semibold text-sm text-gray-800 mb-2">Key Features:</h4>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  {product.features.map((feature, index) => (
+                    <li key={index}>• {feature}</li>
+                  ))}
+                </ul>
+              </div>
+
+              {product.specifications && (
+                <div className="mb-4">
+                  <h4 className="font-semibold text-sm text-gray-800 mb-2">Specifications:</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    {product.specifications.map((spec, index) => (
+                      <li key={index}>• {spec}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               <div className="flex flex-col space-y-2">
                 <button className="btn-primary text-sm">
