@@ -53,5 +53,11 @@ export const brands: Brand[] = [
     name: 'Bajaj',
     logo: '/images/brands/bajaj.png',
     category: 'electronics'
+  },
+  {
+    id: 'bajaj',
+    name: 'Bajaj',
+    logo: '/images/brands/bajaj.png',
+    category: 'electronics'
   }
 ];
