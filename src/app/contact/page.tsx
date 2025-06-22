@@ -225,10 +225,10 @@ export default function ContactPage() {
               Come and explore our wide range of electronics and furniture. Our friendly staff is ready to assist you!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <a href="https://maps.google.com/maps?q=Shop+No.1+Kediya+Vyapar+Bihar+Ambedkar+Chowk+Baloda+Bazar+Raipur+493332" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
                 🗺️ Get Directions
               </a>
-              <a href="tel:+919876543210" className="bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <a href="tel:+919926480250" className="bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
                 📞 Call Now
               </a>
             </div>

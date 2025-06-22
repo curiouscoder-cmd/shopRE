@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { FaPhone, FaWhatsapp, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 
@@ -63,16 +65,69 @@ const ContactSection = () => {
             </div>
           </div>
           
-          <div className="h-[400px] rounded-lg overflow-hidden shadow-lg">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215266754809!2d-73.98776548459448!3d40.74844397932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1638461460188!5m2!1sen!2sus" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
+          <div className="h-[400px] rounded-lg overflow-hidden shadow-lg relative">
+            {/* Latest Google Maps with current satellite imagery */}
+            <iframe
+              src="https://maps.google.com/maps?q=21.6637,81.3498&hl=en&z=18&t=h&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
               loading="lazy"
-              title="Store Location"
+              title="RISHABH ELECTRONICS Store Location - Baloda Bazar, Raipur"
             ></iframe>
+
+            {/* Store info overlay */}
+            <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-white/50">
+              <div className="flex items-center space-x-3">
+                <div className="relative">
+                  <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
+                  <div className="absolute inset-0 w-4 h-4 bg-red-500 rounded-full animate-ping opacity-75"></div>
+                </div>
+                <div>
+                  <h4 className="font-bold text-sm text-gray-800">RISHABH ELECTRONICS</h4>
+                  <p className="text-xs text-gray-600">📍 Baloda Bazar, Raipur</p>
+                  <p className="text-xs text-blue-600 font-medium">Open Now</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Interactive buttons */}
+            <div className="absolute bottom-4 right-4 flex flex-col space-y-2">
+              <a
+                href="https://maps.google.com/maps?q=Shop+No.1+Kediya+Vyapar+Bihar+Ambedkar+Chowk+Baloda+Bazar+Raipur+493332"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-2 rounded-xl text-sm font-medium shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <span>🗺️</span>
+                <span>Get Directions</span>
+              </a>
+
+              <button
+                onClick={() => window.open('https://maps.google.com/maps/@21.6637,81.3498,17z/data=!3m1!1e1', '_blank')}
+                className="bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white px-4 py-2 rounded-xl text-sm font-medium shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <span>🗺️</span>
+                <span>Road View</span>
+              </button>
+
+              <button
+                onClick={() => window.open('https://maps.google.com/maps/place/Ambedkar+Chowk,+Baloda+Bazar,+Chhattisgarh/@21.6637,81.3498,17z', '_blank')}
+                className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-4 py-2 rounded-xl text-sm font-medium shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <span>📍</span>
+                <span>Open in Maps</span>
+              </button>
+            </div>
+
+            {/* Map type indicator */}
+            <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1 shadow-lg border border-gray-200">
+              <div className="text-xs text-gray-600 font-medium flex items-center space-x-1">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                <span>🛰️ Satellite View</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
