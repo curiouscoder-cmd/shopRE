@@ -25,7 +25,7 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl h-[400px] w-full flex items-center justify-center card-3d">
                 <div className="text-center">
-                  <div className="text-6xl mb-4">🏪</div>
+                  <div className="text-6xl mb-4"></div>
                   <h3 className="text-2xl font-bold gradient-text">Our Showroom</h3>
                   <p className="text-gray-600 mt-2">Visit us to experience our products</p>
                 </div>

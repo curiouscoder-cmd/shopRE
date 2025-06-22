@@ -100,5 +100,33 @@ export const categories: Category[] = [
     type: 'furniture',
     image: '/images/categories/sofa.webp',
     description: 'Elegant sofa sets to enhance your living room'
+  },
+  {
+    id: 'washing machine',
+    name: 'Washing Machines',
+    type: 'electronics',
+    image: '/images/categories/washing.jpg',
+    description: 'Best Washing Machines collection '
+  },
+  {
+    id: 'speakers',
+    name: 'Speakers',
+    type: 'electronics',
+    image: '/images/categories/speakers.jpg',
+    description: 'Great speakers , with high sound qualities'
+  },
+  {
+    id: 'water purifier',
+    name: 'Water Purifiers',
+    type: 'electronics',
+    image: '/images/categories/water.png',
+    description: 'Water purifies for good quality microbes free drinking water '
+  },
+  {
+    id: 'cameras',
+    name: 'Security Cameras',
+    type: 'electronics',
+    image: '/images/categories/camera.webp',
+    description: 'Security cameras , for additional security '
   }
 ];

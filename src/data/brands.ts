@@ -55,9 +55,40 @@ export const brands: Brand[] = [
     category: 'electronics'
   },
   {
-    id: 'bajaj',
-    name: 'Bajaj',
-    logo: '/images/brands/bajaj.png',
+    id: 'haier',
+    name: 'Haier',
+    logo: '/images/brands/haier.png',
+    category: 'electronics'
+  },
+  {
+    id: 'luminous',
+    name: 'Luminious',
+    logo: '/images/brands/luminious.png',
+    category: 'electronics'
+  },
+  {
+    id: 'kent',
+    name: 'Kent',
+    logo: '/images/brands/kent.png',
+    category: 'electronics'
+  },
+  {
+    id: 'bluestar',
+    name: 'Bluestar',
+    logo: '/images/brands/bluestar.png',
+    category: 'electronics'
+  },
+  {
+    id: 'lloyd',
+    name: 'Lloyd',
+    logo: '/images/brands/lloyd.jpeg',
+    category: 'electronics'
+  },
+  {
+    id: 'mitsubishi electric',
+    name: 'Mitsubishi Electric',
+    logo: '/images/brands/mit.png',
     category: 'electronics'
   }
+
 ];
