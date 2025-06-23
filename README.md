@@ -9,7 +9,6 @@ A modern, responsive website for RISHABH ELECTRONICS, a trusted electronics and 
 - **Furniture**: Almirahs & Wardrobes, Beds, Tables, Chairs, Dining Sets, Sofa Sets
 - **Top Brands**: Samsung, LG, Sony, Whirlpool, Godrej, Voltas, Prestige, Bajaj, Haier, Kent, and many more
 
-**Location**: Shop No.1, Kediya Vyapar Bihar, Ambedkar Chowk, Baloda Bazar, Raipur - 493332  
 **Contact**: +91 99264 80250  
 **Hours**: Saturday-Thursday: 10:00 AM - 9:00 PM (Closed on Friday)
 
@@ -182,9 +181,7 @@ This project is proprietary software for RISHABH ELECTRONICS. All rights reserve
 ## 📞 Support
 
 For technical support or business inquiries:
-- **Phone**: +91 99264 80250
 - **WhatsApp**: [Message us](https://wa.me/9926480250)
-- **Address**: Shop No.1, Kediya Vyapar Bihar, Ambedkar Chowk, Baloda Bazar, Raipur - 493332
 
 ---
 
