@@ -36,6 +36,7 @@ const ProductCategoriesSection = () => {
               </Link>
             ))}
           </div>
+          <div className="text-center mt-4 text-gray-400 italic">and more</div>
         </div>
         
         <div>
@@ -63,6 +64,7 @@ const ProductCategoriesSection = () => {
               </Link>
             ))}
           </div>
+          <div className="text-center mt-4 text-gray-400 italic">and more</div>
         </div>
         
         <div className="text-center mt-10">

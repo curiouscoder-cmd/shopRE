@@ -196,18 +196,17 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
-            <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 rounded-2xl h-64 flex items-center justify-center relative overflow-hidden">
-              {/* Map Placeholder with Beautiful Design */}
-              <div className="text-center">
-                <div className="text-6xl mb-4">🗺️</div>
-                <h3 className="text-xl font-bold text-gray-700 mb-2">Interactive Map</h3>
-                <p className="text-gray-600">Map integration coming soon</p>
-              </div>
-
-              {/* Floating Location Pin */}
-              <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center text-white text-xl animate-bounce">
-                📍
-              </div>
+            <div className="rounded-2xl overflow-hidden h-64 w-full relative">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1854.1016299679113!2d82.16264626762715!3d21.655949110331267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28808ef47a426d%3A0xb45508996ea12f3!2sRISHABH%20ELECTRONICS%20AND%20FURNITURE!5e0!3m2!1sen!2ssg!4v1750664976690!5m2!1sen!2ssg"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 w-full h-full"
+              />
             </div>
           </div>
         </div>

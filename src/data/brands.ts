@@ -89,6 +89,12 @@ export const brands: Brand[] = [
     name: 'Mitsubishi Electric',
     logo: '/images/brands/mit.png',
     category: 'electronics'
+  },
+  {
+    id: 'havells',
+    name: 'Havells',
+    logo: '/images/brands/havells.png',
+    category: 'electronics'
   }
 
 ];

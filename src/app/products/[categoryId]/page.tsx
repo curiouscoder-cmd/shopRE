@@ -3,6 +3,7 @@ import { productsByCategory } from '@/data/products';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CategoryHeroImage from '@/components/ui/CategoryHeroImage';
+import Image from 'next/image';
 
 interface PageProps {
   params: {
@@ -121,9 +122,18 @@ export default function CategoryPage({ params }: PageProps) {
         {products.map((product) => (
           <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <div className="relative h-48 bg-gray-200 flex items-center justify-center">
-              <div className="text-center p-4">
-                <div className="text-2xl font-bold text-blue-600 mb-1">{product.brand}</div>
-              </div>
+              {product.image ? (
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-contain"
+                />
+              ) : (
+                <div className="text-center p-4">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">{product.name}</div>
+                </div>
+              )}
             </div>
 
             <div className="p-4">
@@ -168,8 +178,8 @@ export default function CategoryPage({ params }: PageProps) {
           <h2 className="text-2xl font-bold mb-4">Need Help Choosing?</h2>
           <p className="text-gray-600 mb-6">Our experts are here to help you find the perfect {category.name.toLowerCase()} for your needs.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+919876543210" className="btn-primary">
-              Call Us: +91 98765 43210
+            <a href="tel:+919926480250" className="btn-primary">
+              Call Us: +91 9926480250
             </a>
             <Link href="/contact" className="btn-secondary">
               Visit Our Store
