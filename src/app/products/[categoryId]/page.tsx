@@ -3,7 +3,7 @@ import { productsByCategory } from '@/data/products';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CategoryHeroImage from '@/components/ui/CategoryHeroImage';
-import Image from 'next/image';
+import ProductImage from '@/components/ui/ProductImage';
 
 interface PageProps {
   params: {
@@ -120,25 +120,30 @@ export default function CategoryPage({ params }: PageProps) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {products.map((product) => (
-          <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-            <div className="relative h-48 bg-gray-200 flex items-center justify-center">
-              {product.image ? (
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-contain"
-                />
-              ) : (
+          <div key={product.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+            {product.image ? (
+              <ProductImage
+                src={product.image}
+                alt={product.name}
+                productName={product.name}
+              />
+            ) : (
+              <div className="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                 <div className="text-center p-4">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">{product.name}</div>
+                  <div className="text-4xl mb-2">📦</div>
+                  <div className="text-sm font-medium text-gray-600">{product.name}</div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
 
             <div className="p-4">
               <h3 className="font-bold text-lg mb-2">{product.name}</h3>
 
+              {product.brand && product.model && (
+                <div className="text-sm text-blue-600 font-medium mb-3">
+                  {product.brand} • Model: {product.model}
+                </div>
+              )}
 
               <div className="mb-4">
                 <h4 className="font-semibold text-sm text-gray-800 mb-2">Key Features:</h4>
